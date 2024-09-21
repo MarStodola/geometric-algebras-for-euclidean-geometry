@@ -4,13 +4,6 @@ import numpy as np
 from pyganja import *
 from cga_functions import *
 
-e1=e1
-e2=e2
-e3=e3
-einf=einf
-eo=eo
-up = up
-
 
 def from_pm_to_inf0(p: float, m: float) -> tuple:
     """input: coeficents of e+ and e-, outputs: coeficients of einf and e0"""
@@ -569,6 +562,3 @@ base_vectors = [E0, F0, G0, E1, E2, Einf, Finf, Ginf]
 
 # Pseudoscalar of M4(CRA) GAC
 I_GAC = wedge_of_n_vectors(base_vectors)
-
-
-parameters_of_conic(init_conic(4,-7,1,-1,np.pi/4))

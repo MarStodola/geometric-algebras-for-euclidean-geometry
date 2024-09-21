@@ -7,8 +7,8 @@ from pyganja import *
 
 # init pseudoscalars
 I_CGA = e1 ^ e2 ^ e3 ^ einf ^ eo
-I_CRA = e1^e2^einf^eo
-I_G3 = e1^e2^e3
+I_CRA = e1 ^ e2 ^ einf ^ eo
+I_G3 = e1 ^ e2 ^ e3
 
 # init planeXY
 planeXY = e3
