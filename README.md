@@ -1,14 +1,14 @@
 # geometric-algebras-for-euclidean-geometry
 
-python      3.9.4
+python      3.9.4\\
 
 Packages versions:
 
-numpy       1.20.3
-clifford    1.4.0
-pyganja     0.0.15
-pandas      2.0.0
-numba       0.54.1
+numpy       1.20.3\\
+clifford    1.4.0\\
+pyganja     0.0.15\\
+pandas      2.0.0\\
+numba       0.54.1\\
 
 Jupyter packages versions
 
