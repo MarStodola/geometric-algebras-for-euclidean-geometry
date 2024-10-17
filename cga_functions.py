@@ -2,8 +2,9 @@
 
 # imports
 import numpy as np
-from clifford.g3c import *
-from pyganja import *
+from clifford.g3c import *  # tools for cga computation
+from pyganja import *  # tools for visualizations
+
 
 # init pseudoscalars
 I_CGA = e1 ^ e2 ^ e3 ^ einf ^ eo
@@ -47,6 +48,7 @@ def norm_flat_point_opns(flat_point):
 
 
 def motor_between_two_planes(plane1, plane2):
+    """motor that converts plane1 to plane2"""
     pl_1 = norm_plane(plane1)
     pl_2 = norm_plane(plane2)
     theta_m = np.arccos((pl_1 | pl_2).value[0])
@@ -54,7 +56,7 @@ def motor_between_two_planes(plane1, plane2):
         line_m = norm_line(pl_1 ^ pl_2)
         return np.exp(- 0.5 * theta_m * line_m)
     else:
-        return np.exp(-0.5 * pl_1 * (pl_2 - pl_1))
+        return np.exp(-0.5 * (pl_2 ^ pl_1))
 
 
 def duality_pga_partial_1(element):
